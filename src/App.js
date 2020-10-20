@@ -48,7 +48,7 @@ function App() {
         }
       })
       .catch((error) => {
-        if(error.indexOf('403')){
+        if(error.indexOf('403') > -1){
           alert("請求太過頻繁請稍後再試");
         }
       });
